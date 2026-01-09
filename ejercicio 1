@@ -1,0 +1,14 @@
+def busqueda_lineal(lista, elemento):
+    for i in range(len(lista)):
+        if lista[i] == elemento:
+            return i
+    return -1
+
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+elemento = 5
+resultado = busqueda_lineal(lista, elemento)
+
+if resultado != -1:
+    print(f"Elemento encontrado en la posición {resultado}")
+else:
+    print("Elemento no encontrado")
